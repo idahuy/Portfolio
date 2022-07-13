@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header start */
+header {
+    padding: 20px 35px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    position: -webkit-sticky; /* safari support */
+    position: sticky;
+    top: 0;
+}
+  
+header a {
+    text-decoration: none;
+    color: black;
+}
+
+header nav {
+    margin: 7px 0;
+}
+
+header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 10px 15px;
+    font-weight: lighter;
+    font-size: 24px;
+}
+
+header nav ul li a:hover {
+    color: teal;
+    border-radius: 15px;
+    text-shadow: none;
+}
+/* end header */
+
+/* start footer */
+footer {
+    background: #fff;
+    width: 100%;
+    padding: 40px 35px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer h2 {
+    color: black;
+    font-size: 30px;
+    margin: 0;
+}
+/* end footer */
+
+/* section start*/
+section {
+    padding: 60px;
+}
+/* section end */
+
+/* hero start */
+.hero {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+}
+
+.hero-cta {
+    width: 35%;
+    text-align: left;
+    margin: 3.5%;
+    line-height: 1.2;
+}
+
+.hero-cta h2 {
+    font-size: 60px;
+}
+
+.hero img {
+    border-radius: 15%;
+}
+/* hero end*/
+
+/* About me start */
+.about {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(255, 115, 0) 0%, rgb(255, 166, 0) 35%, rgb(217, 255, 0) 100%)
+}   
+
+/* About me end */
