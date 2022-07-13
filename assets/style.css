@@ -7,7 +7,7 @@
 /* header start */
 header {
     padding: 20px 35px;
-    background-color: #fff;
+    background-color: #c20054;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -23,6 +23,7 @@ header a {
 
 header nav {
     margin: 7px 0;
+    
 }
 
 header nav ul {
@@ -37,12 +38,17 @@ header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 24px;
+    border-bottom: 5px solid black;
+    padding: 5px 5px;
+    margin: 5px 5px;
+    color: #fff;
 }
 
 header nav ul li a:hover {
-    color: teal;
     border-radius: 15px;
     text-shadow: none;
+    background-color: orange;
+    border-bottom: none;
 }
 /* end header */
 
@@ -66,6 +72,8 @@ footer h2 {
 /* section start*/
 section {
     padding: 60px;
+    background-color: #c4f3ff;
+    border-bottom: 5px solid #c20054;
 }
 /* section end */
 
@@ -76,12 +84,13 @@ section {
     flex-wrap: wrap;
     align-items: flex-start;
     background-attachment: fixed;
+    height: 600px;
 }
 
 .hero-cta {
     width: 35%;
     text-align: left;
-    margin: 3.5%;
+    margin: 1.5%;
     line-height: 1.2;
 }
 
@@ -90,14 +99,101 @@ section {
 }
 
 .hero img {
+    position: relative;
     border-radius: 15%;
+    z-index: 9999;
 }
+
+.hero h2 {
+
+}
+
+.box1 {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    border-radius: 15px;
+    background-color: blue;
+    bottom: 50px;
+    left: 40px;
+    z-index: 0;
+}
+.box2 {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    border-radius: 15px;
+    background-color: teal;
+    top: 400px;
+    left: 40px;
+    z-index: 0;
+}
+.box3 {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    border-radius: 15px;
+    background-color: purple;
+    top: 350px;
+    right: 50px;
+    z-index: 0;
+}
+.box4 {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    border-radius: 15px;
+    background-color: #ff005d;
+    bottom: 55px;
+    left: 50px;
+    z-index: 0;
+}
+.box5 {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    border-radius: 15px;
+    background-color: rgb(0, 255, 76);
+    top: 50px;
+    right: 100px;
+    z-index: 0;
+}
+
 /* hero end*/
 
 /* About me start */
 .about {
-    background: rgb(2,0,36);
-    background: linear-gradient(90deg, rgb(255, 115, 0) 0%, rgb(255, 166, 0) 35%, rgb(217, 255, 0) 100%)
-}   
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+}
+
+.about-cta {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.about h2 {
+    flex: 5%;
+    justify-content: left;
+}
+
+.line {
+    height: 100px;
+    width: 5px;
+    background-color: black;
+    margin-right: 50px;
+}
+.about p {
+    flex: 80%;
+    margin-right: 5px;
+}
 
 /* About me end */
