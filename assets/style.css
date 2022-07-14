@@ -108,83 +108,62 @@ section {
     z-index: 800;
 }
 
-.hero h2 {
+.hero h2, p {
+    color: #ff005d;
+}
 
+.box {
+    width: 100px;
+    height: 100px;
+    display: inline;
+    position: relative;
+    border-radius: 15px;
+    z-index: 0;
 }
 
 .box1 {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    position: relative;
-    border-radius: 15px;
     background-color: blue;
     bottom: 50px;
     left: 40px;
-    z-index: 0;
 }
 .box2 {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    position: relative;
-    border-radius: 15px;
     background-color: teal;
     top: 400px;
     left: 40px;
-    z-index: 0;
 }
 .box3 {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    position: relative;
-    border-radius: 15px;
     background-color: purple;
     top: 350px;
     right: 50px;
-    z-index: 0;
 }
 .box4 {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    position: relative;
-    border-radius: 15px;
     background-color: #ff005d;
     bottom: 55px;
     left: 50px;
-    z-index: 0;
 }
 .box5 {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    position: relative;
-    border-radius: 15px;
     background-color: rgb(0, 255, 76);
     top: 50px;
     right: 100px;
-    z-index: 0;
 }
 
 /* hero end*/
 
-/* About me start */
-.about {
+
+.about, .work, .contact {
     display: flex;
     flex-direction: column;
     width: 100%;
     margin: auto;
 }
 
-.about-cta {
+.about-cta, .work-cta, .contact-cta {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
 }
 
-.about h2 {
+.about h2, .work h2, .contact h2 {
     justify-content: left;
     display: flex;
     box-sizing: content-box;
@@ -195,7 +174,7 @@ section {
 }
 
 
-
+/* About me start */
 .about p {
     flex: 80%;
     margin-right: 5px;
@@ -206,29 +185,6 @@ section {
 /* About me end */
 
 /* Work start */
-.work {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-}
-
-.work-cta {
-    display: flex;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-}
-
-.work h2 {
-    justify-content: left;
-    display: flex;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    color: #ff005d;
-    width: 10%;
-    border-right: #c20054 solid;
-}
-
 .work img {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
     background-color: rgb(252, 225, 56, .80);
@@ -245,31 +201,6 @@ section {
 /* Work end */
 
 /* Contact Start */
-.contact {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    margin: auto;
-    align-items: right;
-    justify-content: right;
-}
-
-.contact-cta {
-    display: flex;
-    flex-wrap: wrap;
-    box-sizing: border-box;
-}
-
-.contact h2 {
-    justify-content: left;
-    display: flex;
-    box-sizing: content-box;
-    flex-wrap: wrap;
-    color: #ff005d;
-    width: 10%;
-    border-right: #c20054 solid;
-}
-
 .contact ul {
     flex: 80%;
     margin-right: 5px;
