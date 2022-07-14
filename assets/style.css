@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Courier New", Courier, monospace;
 }
 
 /* header start */
@@ -15,6 +16,7 @@ header {
     position: sticky;
     top: 0;
     z-index: 9999;
+    
 }
   
 header a {
@@ -33,6 +35,7 @@ header nav ul {
     justify-content: space-between;
     align-items: center;
     list-style: none;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header nav ul li a {
@@ -182,21 +185,22 @@ section {
 }
 
 .about h2 {
-    flex: 5%;
     justify-content: left;
+    display: flex;
+    box-sizing: content-box;
+    flex-wrap: wrap;
     color: #ff005d;
+    width: 10%;
+    border-right: #c20054 solid;
 }
 
-.line {
-    height: 100px;
-    width: 5px;
-    background-color: #c20054;
-    margin-right: 50px;
-}
+
+
 .about p {
     flex: 80%;
     margin-right: 5px;
     color: #c20054;
+    padding: 0 0 0 30px;
 }
 
 /* About me end */
@@ -206,24 +210,37 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
+    margin: auto;
 }
 
 .work-cta {
     display: flex;
+    box-sizing: content-box;
     flex-wrap: wrap;
-    box-sizing: border-box;
 }
 
 .work h2 {
-    flex: 5%;
     justify-content: left;
+    display: flex;
+    box-sizing: content-box;
+    flex-wrap: wrap;
     color: #ff005d;
+    width: 10%;
+    border-right: #c20054 solid;
 }
 
-.work p {
-    flex: 80%;
-    margin-right: 5px;
-    color: #c20054;
+.work img {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: rgb(252, 225, 56, .80);
+    border-radius: 15px;
+    color: #024e76;
+    border: solid 3px #024e76;
+    margin: 0 0 0 30px;
+    width: 100%;
+    max-width: 300px;
+    max-height:100%;
+    display: flex;
+    flex-wrap: nowrap;
 }
 /* Work end */
 
@@ -244,9 +261,13 @@ section {
 }
 
 .contact h2 {
-    flex: 5%;
     justify-content: left;
+    display: flex;
+    box-sizing: content-box;
+    flex-wrap: wrap;
     color: #ff005d;
+    width: 10%;
+    border-right: #c20054 solid;
 }
 
 .contact ul {
@@ -254,13 +275,14 @@ section {
     margin-right: 5px;
     color: #c20054;
     list-style: none;
+    padding: 0 0 0 30px;
 }
 
 .contact ul li {
     flex: 80%;
     color: #c20054;
     display: inline;
-    margin: 0 40px;
+    margin: 0 40px 0 0;
     font-weight: 50px;
     font-size: 36px;
 }
