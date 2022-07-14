@@ -199,5 +199,93 @@ section {
     align-items: center;
     justify-content: center;
 }
-
 /* Contact End */
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2{
+      text-align: center;
+      width: 100%;
+    }
+  
+    .hero-cta {
+      width: 100%;
+    }
+  
+    .hero-cta {
+      text-align: center;
+    }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+
+    .hero p {
+        font-size: 20px;
+    }
+
+    header nav ul li a {
+        border-bottom: none;
+    }
+  
+    .about h2, .work h2, .contact h2 {
+      flex: 1 100%;
+      text-align: center;
+      border-right: none;
+      border-bottom: solid;
+      padding: 15px 0 0 0;
+    }
+  
+    .about-cta, .work-cta, .contact-cta {
+      flex: 2 100%;
+      text-align: left;
+      justify-content: center;
+    }
+  
+    .about p {
+        padding: 15px 0 0 0;
+        font-size: 20px
+    }
+
+    .work-link {
+        padding: 15px 0 0 0;
+    }
+
+    .contact ul {
+        padding: 15px 0 0 0;
+    }
+
+    .contact ul li {
+        display: inline-block;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    .contact ul li {
+        display: inline-block;
+        font-size: 20px;
+    }
+    .contact span {
+        font-size: 20px;
+    }
+  }
