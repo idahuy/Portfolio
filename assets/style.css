@@ -14,6 +14,7 @@ header {
     position: -webkit-sticky; /* safari support */
     position: sticky;
     top: 0;
+    z-index: 9999;
 }
   
 header a {
@@ -54,7 +55,7 @@ header nav ul li a:hover {
 
 /* start footer */
 footer {
-    background: #fff;
+    background: #c20054;
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -63,9 +64,10 @@ footer {
 }
 
 footer h2 {
-    color: black;
-    font-size: 30px;
+    color: #fff;
+    font-size: 12px;
     margin: 0;
+    margin-left: auto;
 }
 /* end footer */
 
@@ -73,7 +75,6 @@ footer h2 {
 section {
     padding: 60px;
     background-color: #c4f3ff;
-    border-bottom: 5px solid #c20054;
 }
 /* section end */
 
@@ -101,7 +102,7 @@ section {
 .hero img {
     position: relative;
     border-radius: 15%;
-    z-index: 9999;
+    z-index: 800;
 }
 
 .hero h2 {
@@ -183,17 +184,46 @@ section {
 .about h2 {
     flex: 5%;
     justify-content: left;
+    color: #ff005d;
 }
 
 .line {
     height: 100px;
     width: 5px;
-    background-color: black;
+    background-color: #c20054;
     margin-right: 50px;
 }
 .about p {
     flex: 80%;
     margin-right: 5px;
+    color: #c20054;
 }
 
 /* About me end */
+
+/* Work start */
+.work {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.work-cta {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.work h2 {
+    flex: 5%;
+    justify-content: left;
+    color: #ff005d;
+}
+
+.work p {
+    flex: 80%;
+    margin-right: 5px;
+    color: #c20054;
+}
+/* Work end */
+
