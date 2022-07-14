@@ -54,6 +54,7 @@ header nav ul li a:hover {
     background-color: orange;
     border-bottom: none;
 }
+
 /* end header */
 
 /* start footer */
@@ -102,56 +103,21 @@ section {
     font-size: 60px;
 }
 
-.hero img {
-    position: relative;
+.avatar img {
     border-radius: 15%;
     z-index: 800;
+    width: 100%;
 }
 
 .hero h2, p {
     color: #ff005d;
 }
-
-.box {
-    width: 100px;
-    height: 100px;
-    display: inline;
-    position: relative;
-    border-radius: 15px;
-    z-index: 0;
-}
-
-.box1 {
-    background-color: blue;
-    bottom: 50px;
-    left: 40px;
-}
-.box2 {
-    background-color: teal;
-    top: 400px;
-    left: 40px;
-}
-.box3 {
-    background-color: purple;
-    top: 350px;
-    right: 50px;
-}
-.box4 {
-    background-color: #ff005d;
-    bottom: 55px;
-    left: 50px;
-}
-.box5 {
-    background-color: rgb(0, 255, 76);
-    top: 50px;
-    right: 100px;
-}
-
 /* hero end*/
 
 
 .about, .work, .contact {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     width: 100%;
     margin: auto;
@@ -161,6 +127,8 @@ section {
     display: flex;
     flex-wrap: wrap;
     box-sizing: border-box;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .about h2, .work h2, .contact h2 {
@@ -171,8 +139,8 @@ section {
     color: #ff005d;
     width: 10%;
     border-right: #c20054 solid;
+    padding: 5px 5px 5px 5px;
 }
-
 
 /* About me start */
 .about p {
@@ -185,18 +153,20 @@ section {
 /* About me end */
 
 /* Work start */
-.work img {
+.work-link img {
+    width: 150px;
+    height: 100px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    background-color: rgb(252, 225, 56, .80);
     border-radius: 15px;
-    color: #024e76;
     border: solid 3px #024e76;
-    margin: 0 0 0 30px;
+    margin: 12px;
+    display: inline-block;
+    flex-direction: row;
+}
+
+.work-cta:first-child() {
     width: 100%;
-    max-width: 300px;
-    max-height:100%;
-    display: flex;
-    flex-wrap: nowrap;
+    height: 100%;
 }
 /* Work end */
 
