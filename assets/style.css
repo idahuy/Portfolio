@@ -227,3 +227,54 @@ section {
 }
 /* Work end */
 
+/* Contact Start */
+.contact {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: auto;
+    align-items: right;
+    justify-content: right;
+}
+
+.contact-cta {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.contact h2 {
+    flex: 5%;
+    justify-content: left;
+    color: #ff005d;
+}
+
+.contact ul {
+    flex: 80%;
+    margin-right: 5px;
+    color: #c20054;
+    list-style: none;
+}
+
+.contact ul li {
+    flex: 80%;
+    color: #c20054;
+    display: inline;
+    margin: 0 40px;
+    font-weight: 50px;
+    font-size: 36px;
+}
+
+.contact ul li a {
+    flex: 80%;
+    margin-right: 5px;
+    color: #c20054;
+}
+
+.contact span {
+    font-size: 24px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Contact End */
