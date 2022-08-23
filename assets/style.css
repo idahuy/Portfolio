@@ -162,22 +162,25 @@ section {
     justify-content: space-around;
     border-radius: 15px;
     height: 300px;
-    width: 80%;
+    width: auto;
 }
 
 .work-link2 {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     float: left;
     padding: 0px;
 }
-
 .wl2-container {
     display: flex;
-    width: 60%;
-    float: right;
-    position: relative;
-    left: 630px;
+    width: auto;
+    justify-content: center;
+}
+
+.work-container {
+    width: 80%;
+    display: inline-block;
+    justify-content: center;
 }
 
 .work img {
